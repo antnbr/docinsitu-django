@@ -1,0 +1,11 @@
+{% extends 'render/writer/writer.html' %}
+
+{% block editor %}
+  <div class="sub-container">
+    <ul>
+      {% for question in questions %}
+        <li class="btn"><a href="{% url 'writer_new_edit_view' pk=question.pk %}">{{ question.question }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

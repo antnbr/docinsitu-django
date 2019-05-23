@@ -1,0 +1,12 @@
+{% extends 'render/base.html' %}
+
+{% block content %}
+  <div class="navbar">
+    <span class="nav-btn"><a href="{% url 'writer_new_view' %}">nouvel article</a></span>
+    <span class="nav-btn"><a href="{% url 'writer_response_view' %}">répondre</a></span>
+  </div>
+  <div class="editor">
+    {% block editor %}
+    {% endblock %}
+  </div>
+{% endblock %}

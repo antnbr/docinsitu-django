@@ -25,6 +25,7 @@ SECRET_KEY = 'l#-+v508&xl4rrbevguekp6+gt32_x-ngxu)yuj3t3wx0pvni@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# private IP '192.168.0.10' is allowed to let other machines to connect to local server. useful if you want to perform responsiveness checks and tests.
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.pythonanywhere.com']
 
 
